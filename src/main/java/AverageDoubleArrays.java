@@ -4,16 +4,23 @@ public class AverageDoubleArrays {
 // Complete these methods
 
     public int count(double[] aa) {
-        return 0;
+        return aa.length;
     }
 
-    public int sum(double[] aa) {
-
-        return 0;
+    public double sum(double[] aa) { //changed return type to double
+        double sum = 0;
+        for (double num: aa
+             ) {
+            sum += num;
+        }
+        return  sum;
     }
 
-    public int average(double[] aa) {
-        return 0;
+    public double average(double[] aa) { //changed return type to double
+        if (aa.length > 0) {
+            return sum(aa) / aa.length;
+        } else {
+            return 0;
+        }
     }
-
 }
